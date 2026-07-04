@@ -1,0 +1,15 @@
+{
+  "name": "js-snacks",
+  "version": "1.0.0",
+  "description": "Raccolta di snack JavaScript per ripasso ed esercizio",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "new": "node scripts/new-snack.js",
+    "watch01": "node snacks/01-closures/index.js",
+    "watch02": "node snacks/02-promises/index.js",
+    "watch03": "node snacks/03-array-methods/index.js",
+    "watch04": "node snacks/04-type-conversion/index.js",
+    "watch05": "node snacks/05-comparisons/index.js"
+  }
+}
