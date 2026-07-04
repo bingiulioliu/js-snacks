@@ -7,6 +7,7 @@
   "scripts": {
     "new": "node scripts/new-snack.js",
     "watch01": "node snacks/01-closures/index.js",
+    "ex01": "node snacks/01-closures/exercise.js",
     "watch02": "node snacks/02-promises/index.js",
     "watch03": "node snacks/03-array-methods/index.js",
     "watch04": "node snacks/04-type-conversion/index.js",
