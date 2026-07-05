@@ -10,7 +10,10 @@ import { prodotti } from "./index.js";
 */
 
 // Scrivi qui il tuo codice:
+console.log('Ex 1');
 
+const prodottiInformatica = prodotti.filter(prodotto => prodotto.categoria === 'informatica')
+console.log(prodottiInformatica.map(prodotto=>prodotto.nome));
 
 
 /* ESERCIZIO 2: ANALISI DEL CATALOGO (REDUCE)
@@ -24,6 +27,15 @@ import { prodotti } from "./index.js";
 */
 
 // Scrivi qui il tuo codice:
+console.log('Es 2');
+
+const scorte = prodotti.reduce((acccumulatore, prodotto) => acccumulatore + prodotto.scorte, 0)
+console.log(scorte);
+
+const prodottoPiuCostoso = prodotti.reduce((acc, curr) => {
+    return (curr.prezzo > acc.prezzo) ? curr : acc;
+}, prodotti[0]);
+console.log(prodottoPiuCostoso);
 
 
 /* ESERCIZIO 3: CHAINING E LOGICA
@@ -38,3 +50,10 @@ import { prodotti } from "./index.js";
 */
 
 // Scrivi qui il tuo codice:
+console.log('Es 3');
+const sconti = prodotti
+    .filter(p => p.scorte < 5)
+    .map((p) => ({...p, inEsaurimento: true }))
+    .map(p => `${p.nome} (${p.categoria})`)
+
+console.log(sconti);
