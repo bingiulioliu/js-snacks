@@ -9,7 +9,9 @@
     "watch01": "node snacks/01-closures/index.js",
     "ex01": "node snacks/01-closures/exercise.js",
     "watch02": "node snacks/02-promises/index.js",
+    "ex02": "node snacks/02-promises/exercise.js",
     "watch03": "node snacks/03-array-methods/index.js",
+    "ex03": "node snacks/03-array-methods/exercise.js",
     "watch04": "node snacks/04-type-conversion/index.js",
     "watch05": "node snacks/05-comparisons/index.js"
   }

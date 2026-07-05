@@ -154,24 +154,3 @@ miaBorsa.aggiungi("penna");
 miaBorsa.aggiungi("quaderno");
 console.log(miaBorsa.elenca());
 console.log(miaBorsa.oggetti); 
-
-
-/* ESERCIZIO 6: IL LOCKER (Controllo di accesso)
-    Istruzioni:
-    1. Crea una funzione 'creaLocker' che accetta una 'password' (stringa) come argomento.
-    2. Restituisci un oggetto con un metodo 'apri(input)'.
-    3. Il metodo 'apri' deve confrontare l'input con la password originale.
-    4. Se corretta, stampa "Accesso consentito", altrimenti "Accesso negato".
-
-    Output atteso:
-    Accesso negato
-    Accesso consentito
-*/
-
-// Scrivi qui il tuo codice:
-
-
-// Test:
-// const mioLocker = creaLocker("1234");
-// mioLocker.apri("0000");
-// mioLocker.apri("1234");

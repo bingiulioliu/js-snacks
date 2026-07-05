@@ -4,7 +4,7 @@
 
 console.log('=== ARRAY METHODS ===');
 
-const prodotti = [
+export const prodotti = [
   { nome: 'Tastiera', prezzo: 45, categoria: 'informatica', scorte: 12 },
   { nome: 'Mouse', prezzo: 20, categoria: 'informatica', scorte: 0 },
   { nome: 'Sedia', prezzo: 120, categoria: 'arredamento', scorte: 5 },
