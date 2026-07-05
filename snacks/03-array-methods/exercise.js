@@ -57,3 +57,40 @@ const sconti = prodotti
     .map(p => `${p.nome} (${p.categoria})`)
 
 console.log(sconti);
+
+/* ESERCIZIO 4: IL REPORT DELLE CATEGORIE
+    Consegna:
+    1. Usa 'reduce' per creare un oggetto che contenga solo le categorie come chiavi, 
+        e come valore il numero totale di prodotti per quella categoria.
+    
+    Output atteso:
+    { informatica: 3, arredamento: 2 }
+*/
+
+// Scrivi qui il tuo codice:
+const prodottiCategoria = prodotti.reduce((acc, curr) => {
+    const cat = curr.categoria
+    if (acc[cat]) {
+        acc[cat] = acc[cat]+1
+    } else {
+        acc[cat] = 1
+    }
+    return acc
+}, {})
+console.log('Es 4');
+console.log(prodottiCategoria);
+
+
+
+/* ESERCIZIO 5: RICERCA E TRASFORMAZIONE (FINESSE)
+    Consegna:
+    1. Trova il primo prodotto che costa più di 100 euro.
+    2. Se esiste, restituisci una stringa "Trovare: NOME - PREZZO".
+    3. Se non esiste, restituisci "Nessun prodotto trovato".
+    (Usa l'operatore ternario e l'optional chaining `?.` o un if/else)
+
+    Output atteso:
+    "Trovare: Sedia - 120"
+*/
+
+// Scrivi qui il tuo codice:
