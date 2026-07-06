@@ -13,6 +13,7 @@
     "watch03": "node snacks/03-array-methods/index.js",
     "ex03": "node snacks/03-array-methods/exercise.js",
     "watch04": "node snacks/04-type-conversion/index.js",
+    "ex04": "node snacks/04-type-conversion/exercise.js",
     "watch05": "node snacks/05-comparisons/index.js"
   }
 }

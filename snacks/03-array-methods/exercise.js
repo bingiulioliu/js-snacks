@@ -94,3 +94,10 @@ console.log(prodottiCategoria);
 */
 
 // Scrivi qui il tuo codice:
+const findProd = prodotti.find(p => p.prezzo > 100);
+
+const message = findProd ? `TROVARE: ${findProd.nome} - ${findProd.prezzo}` : `Nessun prodotto trovato`;
+
+console.log('Es 5');
+console.log(message);
+
