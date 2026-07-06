@@ -14,6 +14,9 @@
     "ex03": "node snacks/03-array-methods/exercise.js",
     "watch04": "node snacks/04-type-conversion/index.js",
     "ex04": "node snacks/04-type-conversion/exercise.js",
-    "watch05": "node snacks/05-comparisons/index.js"
+    "watch05": "node snacks/05-comparisons/index.js",
+    "ex05": "node snacks/05-comparisons/exercise.js",
+    "watch06": "node snacks/06-conditional-operators/index.js",
+    "ex06": "node snacks/06-conditional-operators/exercise.js"
   }
 }
