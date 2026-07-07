@@ -100,4 +100,3 @@ const message = findProd ? `TROVARE: ${findProd.nome} - ${findProd.prezzo}` : `N
 
 console.log('Es 5');
 console.log(message);
-
