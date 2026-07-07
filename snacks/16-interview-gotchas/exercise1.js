@@ -77,10 +77,84 @@ for (let i = 0; i < listaNumeri.length; i++) {
 }
 console.log('A: ' + sommaDispari);
 
-/* 5. Ciclo annidato: Crea una matrice (array di array) 3x3 e stampa solo gli elementi sulla diagonale principale */
-const matrice = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-// Suggerimento: ti servirà un ciclo dentro l'altro (o un singolo ciclo se usi l'indice)
+/* ESERCIZI: Cicli (For, While, Do...While) */
+
+// 1. FOR: Somma dei quadrati
+// Calcola la somma dei quadrati dei numeri da 1 a 5 (1*1 + 2*2 + ... + 5*5)
+let sommaQuadrati = 0;
+// Implementa qui...
+for (let i = 0; i <= 5; i++) {
+    sommaQuadrati += i*i;
+}
+console.log(sommaQuadrati);
+
+// 2. FOR...OF: Conteggio vocali
+// Data una stringa, conta quante vocali contiene
+const frase = "javascript è potente";
+let conteggioVocali = 0;
+// Implementa qui...
+for (let lettera of frase) {
+    const vocali = 'aeiouè';
+    if (vocali.includes(lettera)){
+        conteggioVocali++
+    }
+}
+console.log(conteggioVocali);
+
+
+// 3. WHILE: Ricerca primo multiplo
+// Trova il primo numero maggiore di 100 che sia divisibile per 13
+let numero = 101;
+// Implementa qui...
+while (numero % 13 !== 0) {
+    numero++
+}
+console.log(numero);
+
+
+// 4. DO...WHILE: Menu interattivo (Simulazione)
+// Chiedi all'utente di inserire un numero finché non inserisce 0.
+// (Usa una variabile per simulare l'input o usa prompt() se sei nel browser)
+let input = [5, 4, 7, 3, 1, 0];
+// Implementa qui...
+
+// 5. CICLO ANNIDATO (FOR): Tabellina
+// Stampa una tabellina del 3 (da 3x1 a 3x10) usando un ciclo
+// Implementa qui...
+for (let i = 1; i <= 10; i++) {
+    console.log(i*3);
+}
+
+/* ESERCIZI AVANZATI: Logica e Cicli */
+
+// 1. FOR: Inversione di una stringa
+// Senza usare .reverse(), crea una nuova stringa invertendo quella data
+const parola = "JavaScript";
+let parolaInversa = "";
+// Implementa qui...
+
+// 2. WHILE: Calcolo fattoriale
+// Calcola il fattoriale di un numero (es. 5! = 5*4*3*2*1 = 120)
+const n = 5;
+let fattoriale = 1;
+// Implementa qui...
+
+// 3. DO...WHILE: Generatore sequenziale
+// Genera numeri casuali tra 1 e 20 finché non esce un numero divisibile per 5. 
+// Assicurati che il ciclo venga eseguito almeno una volta.
+let estratto;
+// Implementa qui...
+
+// 4. FOR: Analisi di una sequenza (FizzBuzz classico)
+// Itera da 1 a 20. Se il numero è multiplo di 3 stampa "Fizz",
+// se è multiplo di 5 stampa "Buzz", se è entrambi stampa "FizzBuzz"
+// Implementa qui...
+
+// 5. CICLO ANNIDATO: Disegno di un triangolo
+// Stampa un triangolo di asterischi di altezza 5:
+// *
+// **
+// ***
+// ****
+// *****
+// Suggerimento: un ciclo per le righe, uno per le colonne
