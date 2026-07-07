@@ -17,6 +17,8 @@
     "watch05": "node snacks/05-comparisons/index.js",
     "ex05": "node snacks/05-comparisons/exercise.js",
     "watch06": "node snacks/06-conditional-operators/index.js",
-    "ex06": "node snacks/06-conditional-operators/exercise.js"
+    "ex06": "node snacks/06-conditional-operators/exercise.js",
+    "ex16": "node snacks/16-interview-gotchas/exercise.js",
+    "ex16-1": "node snacks/16-interview-gotchas/exercise1.js"
   }
 }
